@@ -183,15 +183,3 @@ void pi(int R, unsigned long int *C, int N, unsigned long int *I, unsigned long 
         }
     }
 }
-
-void main() {
-    unsigned long int X[8] = {0,0,0,0,0,0,0,0};
-    unsigned long int Y[4] = {1,2,3,4};
-    tuplecopy(4, X, 0, Y);
-    
-    printf("{");
-    for (int i=0; i<8; i++) {
-        printf("%lx,", X[i]);
-    }
-    printf("}");
-}
